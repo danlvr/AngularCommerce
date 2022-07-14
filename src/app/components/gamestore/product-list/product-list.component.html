@@ -1,1 +1,12 @@
-<p>product-list works!</p>
+<div class="card">
+  <div class="card-header">Games</div>
+  <div class="card-body">
+
+  <div class="row">
+    <div class="col-md-4" *ngFor="let game of games">
+      <app-product-item [game]="game"></app-product-item>
+    </div>
+  </div>
+
+  </div>
+</div>
